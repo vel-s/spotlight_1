@@ -1,18 +1,32 @@
-var fs = require('fs');
-var path = require('path');
-var net = require('net');
+// var fs = require('fs');
 
-console.log(net.Socket.prototype);
+// var path = require('path');
+let express = require('express')
+console.log(express)
 
-// let folder = 'myFolder';
-// fs.readdir('myFolder', (err, files) => {
-//     if(err) throw err;
-//     process.chdir(folder);
-//     files.forEach((file) => {
-//         let ext = path.extname(file);
-//         console.log(path.basename(file, path.extname(file)));
+// console.log(express)
+// const http = require('http'),
+//   server = http.createServer((req, res) => {
+//     res.writeHead(200, {'Content-Type': 'text/plain'})
+//     // console.log(req.headers)
+//     console.log(req.url)
+//     res.write('Hello world!')
+//     res.end()
+//   })
+// server.listen(8000)
+// console.log('List on port 8000')
 
-//         fs.renameSync(file, path.basename(file, ext) + '_new', + ext);
-//     })
-// });
-
+// let Readable = require('stream').Readable,
+//   stream = new Readable(),
+//   data = ('At athe ene we all we all gonna be raacchh At athe ene we all gonna be raacchh At athe ene we all gonna be raacchh At athe ene we all gonna be raacchh At athe ene we all gonna be raacchh At athe ene we all gonna be raacchh ').split(' ');
+//
+// stream._read = () => {
+//   if(data.length) {
+//     setTimeout(() => {
+//       stream.push(data.shift() + ' ');
+//     }, 200);
+//   } else {
+//     stream.push(null);
+//   }
+// }
+// stream.pipe(process.stdout);
