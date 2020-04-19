@@ -1,8 +1,79 @@
 // var fs = require('fs');
-
 // var path = require('path');
-let express = require('express')
-console.log(express)
+let express = require('express'),
+  bodyParser = require('body-parser'),
+  app = express(),
+  server,
+  store = {
+    home: {
+      link_name: 'Home',
+      page: 'Home app',
+      content: 'Home page content'
+    },
+    about: {
+      link_name: 'About',
+      page: 'About app',
+      content: 'About page content'
+    },
+    download: {
+      link_name: 'Download',
+      page: 'Download app',
+      content: 'Download page content'
+    },
+    profile: {
+      link_name: 'Profile',
+      page: 'Profile app',
+      content: 'Profile page content'
+    }
+  };
+var storeKeys = Object.keys(store);
+
+app.disable('X-Powered-By');
+app.set('view engine', 'pug')
+
+app.use((req, res, next) => {
+  console.log('%s %s', req.method, req.url)
+  next()
+})
+app.use(express.static(__dirname +'/public'))
+app.use(bodyParser.urlencoded({extended: true}))
+app.get('/about', (req, res) => {
+  res.render('about', {
+    links: storeKeys,
+  })
+})
+app
+  .route('/new')
+  .get((req, res) => {
+    res.render('new', {
+      page: 'Add New',
+      links: storeKeys,
+    })
+  })
+  .post((req, res) => {
+    let data = req.body
+    if(data.pageurl && data.pagename && data.pagecontent) {
+      store[data.pagename] = {
+        page: data.pagename,
+        content: data.pagecontent,
+      }
+      storeKeys = Object.keys(store);
+    }
+    res.redirect('/')
+  })
+app
+  .get('/:page?', (req, res) => {
+    let page = req.params.page,
+      data
+    if (!page) page = 'home'
+    data = store[page]
+    if (!data) res.redirect('/')
+    data.links = storeKeys
+    data.query = req.query
+    res.render('main', data)
+  })
+server = app.listen(3000, () => console.log('Server ON 3000'))
+
 
 // console.log(express)
 // const http = require('http'),
@@ -30,3 +101,4 @@ console.log(express)
 //   }
 // }
 // stream.pipe(process.stdout);
+

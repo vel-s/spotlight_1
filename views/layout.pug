@@ -1,0 +1,24 @@
+doctype html
+html(lang="en")
+    head
+        title=page
+        link(
+            rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        )
+        style
+            |ul.nav a {
+            |    text-transform: capitalize
+            |}
+    body
+        .container
+            h1= page
+            hr
+            ul.nav
+                each link in links
+                    li.nav-item: a(href=link).nav-link= link
+                li.nav-item: a(href='/new').nav-link new
+            hr
+
+            hr
+            block content
