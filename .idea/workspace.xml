@@ -2,22 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ae722d3-ab55-4731-b99b-99a82a5fe588" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/watcherTasks.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/hello.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/about.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/layout.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/main.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/main.pug" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/views/new.pug" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jsLibraryMappings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/spotlight_1.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/spotlight_1.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/contacts.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/views/contacts.pug" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/node_modules/body-parser/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/node_modules/body-parser/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/views/about.pug" beforeDir="false" afterPath="$PROJECT_DIR$/views/about.pug" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,6 +111,9 @@
       <workItem from="1587324035532" duration="2660000" />
       <workItem from="1587326708613" duration="6622000" />
       <workItem from="1587335281252" duration="904000" />
+      <workItem from="1587665839141" duration="243000" />
+      <workItem from="1587666095869" duration="1925000" />
+      <workItem from="1587837040530" duration="870000" />
     </task>
     <servers />
   </component>
@@ -156,10 +149,10 @@
       <screen x="0" y="0" width="3840" height="1040" />
     </state>
     <state x="1326" y="323" key="EditFileWatcherDialog/0.0.3840.1040/-1920.0.1920.1040@0.0.3840.1040" timestamp="1587326864892" />
-    <state x="1180" y="312" key="FileChooserDialogImpl" timestamp="1586984355838">
+    <state x="1180" y="312" key="FileChooserDialogImpl" timestamp="1587665910152">
       <screen x="0" y="0" width="3840" height="1040" />
     </state>
-    <state x="1180" y="312" key="FileChooserDialogImpl/0.0.3840.1040/-1920.0.1920.1040@0.0.3840.1040" timestamp="1586984355838" />
+    <state x="1180" y="312" key="FileChooserDialogImpl/0.0.3840.1040/-1920.0.1920.1040@0.0.3840.1040" timestamp="1587665910152" />
     <state width="1646" height="344" key="GridCell.Tab.0.bottom" timestamp="1587328763521">
       <screen x="0" y="0" width="3840" height="1040" />
     </state>
@@ -224,10 +217,10 @@
       <screen x="0" y="0" width="3840" height="1040" />
     </state>
     <state width="1646" height="344" key="GridCell.Tab.3.right/0.0.3840.1040/-1920.0.1920.1040@0.0.3840.1040" timestamp="1587327581380" />
-    <state x="986" y="206" width="1377" height="717" key="SettingsEditor" timestamp="1587335249119">
+    <state x="2125" y="146" width="1377" height="717" key="SettingsEditor" timestamp="1587818777336">
       <screen x="0" y="0" width="3840" height="1040" />
     </state>
-    <state x="986" y="206" width="1377" height="717" key="SettingsEditor/0.0.3840.1040/-1920.0.1920.1040@0.0.3840.1040" timestamp="1587335249119" />
+    <state x="2125" y="146" width="1377" height="717" key="SettingsEditor/0.0.3840.1040/-1920.0.1920.1040@0.0.3840.1040" timestamp="1587818777336" />
     <state x="2715" y="265" width="540" height="524" key="StructurePopup" timestamp="1587323733959">
       <screen x="0" y="0" width="3840" height="1040" />
     </state>

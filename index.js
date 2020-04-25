@@ -26,7 +26,7 @@ let express = require('express'),
       content: 'Profile page content'
     }
   };
-var storeKeys = Object.keys(store);
+let storeKeys = Object.keys(store);
 
 app.disable('X-Powered-By');
 app.set('view engine', 'pug')
@@ -43,10 +43,10 @@ app.get('/about', (req, res) => {
   })
 })
 app
-  .route('/new')
+  .route('/contacts')
   .get((req, res) => {
-    res.render('new', {
-      page: 'Add New',
+    res.render('contacts', {
+      page: 'Contact us',
       links: storeKeys,
     })
   })
@@ -61,6 +61,26 @@ app
     }
     res.redirect('/')
   })
+// app
+//   .route('/new')
+//   .get((req, res) => {
+//     res.render('new', {
+//       page: 'Add New',
+//       links: storeKeys,
+//     })
+//   })
+//   .post((req, res) => {
+//     let data = req.body
+//     if(data.pageurl && data.pagename && data.pagecontent) {
+//       store[data.pagename] = {
+//         page: data.pagename,
+//         content: data.pagecontent,
+//       }
+//       storeKeys = Object.keys(store);
+//     }
+//     res.redirect('/')
+//   })
+
 app
   .get('/:page?', (req, res) => {
     let page = req.params.page,
