@@ -15,6 +15,8 @@ const rafl = [
   'big_boss',
   'take_no',
 ]
+console.log(`rafl => ${rafl}`);
+
 // let a = Array.from([1, 2, 3], x => x + x);
 // console.log(a)
 // let cal = Array.from(rafl, el => {
